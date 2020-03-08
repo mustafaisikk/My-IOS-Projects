@@ -16,3 +16,4 @@
 ### Bunun İçin Eklediğiniz Konumun Yanındaki İkonu Kullanabilirsiniz.
 ![Screen Shot 2020-03-08 at 10 40 14](https://user-images.githubusercontent.com/52778108/76168210-bfa4f100-612a-11ea-8878-f285013451ef.png)
 
+### Keyifli Gezmeler 😊
