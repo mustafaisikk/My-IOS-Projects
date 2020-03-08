@@ -30,6 +30,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var nameText: UITextField!
     @IBOutlet weak var commentText: UITextField!
+    @IBOutlet weak var saveButton: UIButton!
     
     
     override func viewDidLoad() {
@@ -46,6 +47,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         mapView.addGestureRecognizer(gestureRecognizer)
         
         if selectedTitle != ""{
+            saveButton.isHidden = true
             //CoreData
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             let context = appDelegate.persistentContainer.viewContext
@@ -195,6 +197,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         navigationController?.popViewController(animated: true)
         
     }
+    
     
 }
 
