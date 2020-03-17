@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "781D9A84-42D1-4EFD-8F6C-C7CE72A3539F"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DA393160-461E-4433-B702-A3C0E46B3949"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "instagramClone/UploadViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "makeAlert(titileString:messageString:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E4AA3ECF-BF9D-46EA-A12A-36C6D6749C3F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "instagramClone/SettingsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "updateButton(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "27876C98-3E46-475D-8887-21ACCE6A997F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "instagramClone/SettingsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "SettingsViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "27876C98-3E46-475D-8887-21ACCE6A997F - 239cc2c15de64a24"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "instagramClone.SettingsViewController.imageView.getter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "instagramClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mustafaisik/Desktop/My%20Repos/My%20I%CC%87os%20Projects/instagramClone/instagramClone/SettingsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "27876C98-3E46-475D-8887-21ACCE6A997F - dd30a85aaeab9e28"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "instagramClone.SettingsViewController.imageView.setter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "instagramClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mustafaisik/Desktop/My%20Repos/My%20I%CC%87os%20Projects/instagramClone/instagramClone/SettingsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "27876C98-3E46-475D-8887-21ACCE6A997F - 8f9bca69cbbde139"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "instagramClone.SettingsViewController.imageView.modify : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "instagramClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mustafaisik/Desktop/My%20Repos/My%20I%CC%87os%20Projects/instagramClone/instagramClone/SettingsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "67">
+               </Location>
+               <Location
+                  uuid = "27876C98-3E46-475D-8887-21ACCE6A997F - 7a2f4b021e7b8a42"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "instagramClone.SettingsViewController.imageView.modify : Swift.Optional&lt;__C.UIImageView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "instagramClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mustafaisik/Desktop/My%20Repos/My%20I%CC%87os%20Projects/instagramClone/instagramClone/SettingsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "27876C98-3E46-475D-8887-21ACCE6A997F - f4c61cc513f3e1f4"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "instagramClone.SettingsViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; instagramClone.SettingsViewController"
+                  moduleName = "instagramClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mustafaisik/Desktop/My%20Repos/My%20I%CC%87os%20Projects/instagramClone/instagramClone/SettingsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "27876C98-3E46-475D-8887-21ACCE6A997F - e553fdb9adfded7"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "instagramClone.SettingsViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;instagramClone.SettingsViewController&gt;"
+                  moduleName = "instagramClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mustafaisik/Desktop/My%20Repos/My%20I%CC%87os%20Projects/instagramClone/instagramClone/SettingsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "92">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C1EA4237-A3EC-443A-BB6E-D5865EB35A6B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "instagramClone/SettingsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
