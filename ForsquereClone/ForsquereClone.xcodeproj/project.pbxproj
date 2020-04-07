@@ -18,6 +18,12 @@
 		3E7E931224229A880025E6F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7E931024229A880025E6F8 /* Main.storyboard */; };
 		3E7E931424229A8B0025E6F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E7E931324229A8B0025E6F8 /* Assets.xcassets */; };
 		3E7E931724229A8B0025E6F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7E931524229A8B0025E6F8 /* LaunchScreen.storyboard */; };
+		3EA5159B2434C9ED00ED2715 /* FriendsPlacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5159A2434C9ED00ED2715 /* FriendsPlacesVC.swift */; };
+		3EA5159D2434CF1700ED2715 /* FriendsPlacesDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5159C2434CF1700ED2715 /* FriendsPlacesDetailsVC.swift */; };
+		3ECE55B624297E7000D74FB1 /* RequestsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE55B524297E7000D74FB1 /* RequestsCell.swift */; };
+		3ECE55B824297FD700D74FB1 /* RequestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE55B724297FD700D74FB1 /* RequestVC.swift */; };
+		3ECE55BA2429846A00D74FB1 /* MyFriendsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE55B92429846A00D74FB1 /* MyFriendsVC.swift */; };
+		3ECE55BC242987CD00D74FB1 /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE55BB242987CD00D74FB1 /* UsersVC.swift */; };
 		3EF201712422F11F00EF1EE0 /* PlacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF201702422F11F00EF1EE0 /* PlacesVC.swift */; };
 		A8F10D9C9F72B59C5D447B5A /* Pods_ForsquereClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6B1C800FEF29F76149855B /* Pods_ForsquereClone.framework */; };
 /* End PBXBuildFile section */
@@ -36,6 +42,12 @@
 		3E7E931324229A8B0025E6F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E7E931624229A8B0025E6F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E7E931824229A8B0025E6F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EA5159A2434C9ED00ED2715 /* FriendsPlacesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsPlacesVC.swift; sourceTree = "<group>"; };
+		3EA5159C2434CF1700ED2715 /* FriendsPlacesDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsPlacesDetailsVC.swift; sourceTree = "<group>"; };
+		3ECE55B524297E7000D74FB1 /* RequestsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsCell.swift; sourceTree = "<group>"; };
+		3ECE55B724297FD700D74FB1 /* RequestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestVC.swift; sourceTree = "<group>"; };
+		3ECE55B92429846A00D74FB1 /* MyFriendsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendsVC.swift; sourceTree = "<group>"; };
+		3ECE55BB242987CD00D74FB1 /* UsersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
 		3EF201702422F11F00EF1EE0 /* PlacesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesVC.swift; sourceTree = "<group>"; };
 		AC6B1C800FEF29F76149855B /* Pods_ForsquereClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForsquereClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC056DE6108B864AB79DBAC /* Pods-ForsquereClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForsquereClone.release.xcconfig"; path = "Target Support Files/Pods-ForsquereClone/Pods-ForsquereClone.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,6 +100,12 @@
 				3E0F9AFA24244CFB00C16F19 /* MapVC.swift */,
 				3E5ECAFF2425766E002E9E01 /* PlaceModel.swift */,
 				3E5ECB012425B833002E9E01 /* DetailsVC.swift */,
+				3ECE55B524297E7000D74FB1 /* RequestsCell.swift */,
+				3ECE55B724297FD700D74FB1 /* RequestVC.swift */,
+				3ECE55B92429846A00D74FB1 /* MyFriendsVC.swift */,
+				3ECE55BB242987CD00D74FB1 /* UsersVC.swift */,
+				3EA5159A2434C9ED00ED2715 /* FriendsPlacesVC.swift */,
+				3EA5159C2434CF1700ED2715 /* FriendsPlacesDetailsVC.swift */,
 			);
 			path = ForsquereClone;
 			sourceTree = "<group>";
@@ -225,14 +243,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ECE55B824297FD700D74FB1 /* RequestVC.swift in Sources */,
 				3E7E930F24229A880025E6F8 /* SignUpVC.swift in Sources */,
 				3E5ECB022425B833002E9E01 /* DetailsVC.swift in Sources */,
+				3EA5159D2434CF1700ED2715 /* FriendsPlacesDetailsVC.swift in Sources */,
 				3E5ECB002425766E002E9E01 /* PlaceModel.swift in Sources */,
 				3E0F9AFB24244CFB00C16F19 /* MapVC.swift in Sources */,
 				3E7E930B24229A880025E6F8 /* AppDelegate.swift in Sources */,
 				3EF201712422F11F00EF1EE0 /* PlacesVC.swift in Sources */,
 				3E0F9AF924244B1E00C16F19 /* AddPlaceVC.swift in Sources */,
 				3E7E930D24229A880025E6F8 /* SceneDelegate.swift in Sources */,
+				3ECE55BA2429846A00D74FB1 /* MyFriendsVC.swift in Sources */,
+				3ECE55B624297E7000D74FB1 /* RequestsCell.swift in Sources */,
+				3ECE55BC242987CD00D74FB1 /* UsersVC.swift in Sources */,
+				3EA5159B2434C9ED00ED2715 /* FriendsPlacesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

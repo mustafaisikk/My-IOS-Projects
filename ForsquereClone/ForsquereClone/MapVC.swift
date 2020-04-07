@@ -70,6 +70,10 @@ class MapVC: UIViewController , MKMapViewDelegate , CLLocationManagerDelegate{
          object["latitude"] = placeModel.placeChoosenLatitude
          object["longitude"] = placeModel.placeChoosenLongitude
          
+        if let currentUserId = PFUser.current()?.objectId! {
+            object["userId"] = currentUserId
+        }
+         
          if let imageData = placeModel.placeImage.jpegData(compressionQuality: 0.5){
              object ["image"] = PFFileObject(name: "image.jpeg", data: imageData)
          }
@@ -81,9 +85,9 @@ class MapVC: UIViewController , MKMapViewDelegate , CLLocationManagerDelegate{
                  alert.addAction(okButton)
                  self.present(alert, animated: true, completion: nil)
              }else{
-                 self.performSegue(withIdentifier: "mapVCtoPlacesVC", sender: nil)
+                self.performSegue(withIdentifier: "mapVCtoPlacesVC", sender: nil)
              }
-         }
+         }	
         
     }
     

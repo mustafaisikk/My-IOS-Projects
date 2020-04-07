@@ -16,6 +16,7 @@ class PlacesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var nameArray =  [String]()
     var idArray = [String]()
     var selectedID = ""
+    var currentUserId = PFUser.current()?.objectId! ?? ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,9 +31,14 @@ class PlacesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         getDataFromParse()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        getDataFromParse()
+    }
+    
     func getDataFromParse(){
         
         let query = PFQuery(className: "Places")
+        query.whereKey("userId", equalTo: self.currentUserId)
         query.findObjectsInBackground { (objects, error) in
             if error != nil {
                 self.makeAllert(titleInput: "Error", messageInput: error?.localizedDescription ?? "Error")
@@ -60,7 +66,7 @@ class PlacesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
          if segue.identifier == "toDetails" {
              let destinationVC = segue.destination as? DetailsVC
-            destinationVC?.choosenId = selectedID
+             destinationVC?.choosenId = selectedID
          }
      }
      
@@ -91,6 +97,35 @@ class PlacesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         cell.textLabel?.text = nameArray[indexPath.row]
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let alert = UIAlertController(title: "Are You Sure?", message: "Deleting This Place...", preferredStyle: UIAlertController.Style.alert)
+            let yesButton = UIAlertAction(title: "YES", style: UIAlertAction.Style.default) { (action) in
+                self.deleteMyPlace(placeId: self.idArray[indexPath.row])
+            }
+            let declineButton = UIAlertAction(title: "GIVE UP", style: UIAlertAction.Style.destructive, handler: nil)
+            alert.addAction(yesButton)
+            alert.addAction(declineButton)
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    func deleteMyPlace(placeId : String){
+        let deletePlaceQuery = PFQuery(className: "Places")
+        deletePlaceQuery.whereKey("objectId", equalTo: placeId)
+        deletePlaceQuery.findObjectsInBackground { (objects, error) in
+            if error != nil {
+                self.makeAllert(titleInput: "Error", messageInput: error?.localizedDescription ?? "")
+            }else{
+                if objects != nil {
+                    objects![0].deleteEventually()
+                    self.performSegue(withIdentifier: "reloadMyPlaces", sender: nil)
+                }
+            }
+        }
+    }
+    
     func makeAllert(titleInput : String, messageInput : String){
         let alert = UIAlertController(title: titleInput, message: messageInput, preferredStyle: UIAlertController.Style.alert)
         let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)

@@ -14,6 +14,7 @@ class AddPlaceVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
     @IBOutlet weak var placeTypeField: UITextField!
     @IBOutlet weak var placeCommentField: UITextField!
     @IBOutlet weak var placeImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

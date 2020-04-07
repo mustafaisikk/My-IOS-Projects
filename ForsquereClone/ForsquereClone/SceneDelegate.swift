@@ -21,8 +21,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         if PFUser.current() != nil{
             let board = UIStoryboard(name: "Main", bundle: nil)
-            let navigationController = board.instantiateViewController(identifier: "navigationController") as? UINavigationController
-            window?.rootViewController = navigationController
+            let tabbarController = board.instantiateViewController(identifier: "tabBar") as? UITabBarController
+            window?.rootViewController = tabbarController
         }
         
         guard let _ = (scene as? UIWindowScene) else { return }
