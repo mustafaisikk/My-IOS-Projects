@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MachineLearningImageRecognition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select.png" translatesAutoresizingMaskIntoConstraints="NO" id="JRS-nJ-EJE">
+                                <rect key="frame" x="20" y="52" width="374" height="419"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="QKJ-bH-v2w"/>
+                                    <constraint firstAttribute="height" constant="419" id="apD-vg-rFJ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXd-KN-08k">
+                                <rect key="frame" x="20" y="521" width="374" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="156-Ed-yCX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2F-46-b4O">
+                                <rect key="frame" x="166" y="633" width="92" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Change"/>
+                                <connections>
+                                    <action selector="changeClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xNa-EM-cmn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JRS-nJ-EJE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="19S-eP-I4z"/>
+                            <constraint firstItem="JRS-nJ-EJE" firstAttribute="leading" secondItem="XXd-KN-08k" secondAttribute="leading" id="8dh-MW-GSk"/>
+                            <constraint firstItem="JRS-nJ-EJE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="BuS-34-LrW"/>
+                            <constraint firstItem="g2F-46-b4O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="166" id="FR3-e1-Naf"/>
+                            <constraint firstItem="XXd-KN-08k" firstAttribute="top" secondItem="JRS-nJ-EJE" secondAttribute="bottom" constant="50" id="GJv-Jf-vKn"/>
+                            <constraint firstItem="JRS-nJ-EJE" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="O25-Ub-XYM"/>
+                            <constraint firstItem="JRS-nJ-EJE" firstAttribute="trailing" secondItem="XXd-KN-08k" secondAttribute="trailing" id="anO-Hm-PMl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="g2F-46-b4O" secondAttribute="bottom" constant="184" id="oPh-zD-gUO"/>
+                            <constraint firstItem="g2F-46-b4O" firstAttribute="top" secondItem="XXd-KN-08k" secondAttribute="bottom" constant="53" id="plQ-q3-qjW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="JRS-nJ-EJE" id="djY-3g-ltg"/>
+                        <outlet property="label" destination="XXd-KN-08k" id="Kdx-Ij-LVX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65.217391304347828" y="120.53571428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="select.png" width="264" height="300"/>
+    </resources>
+</document>
